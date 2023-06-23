@@ -3,7 +3,7 @@ package org.example;
 public class Calculator {
     Person person;
     double bill;
-    public double calculateDiscount(Person person,double amount, boolean isPhone) {
+    public static double calculateDiscount(Person person,double amount, boolean isPhone) {
         double discount = 0.0;
 
         if (!isPhone) {
@@ -24,7 +24,8 @@ public class Calculator {
         return discount;
     }
 
-    public double calculateNetPayableAmount(Person person,double amount, boolean isPhone) {
+    //Method for calculating net payable amount
+    public static double calculateNetPayableAmount(Person person,double amount, boolean isPhone) {
         double discount = calculateDiscount(person,amount, isPhone);
         return amount - discount;
     }
