@@ -13,30 +13,36 @@ public class Person {
       this.isOver2YearsCustomer = isOver2YearsCustomer;
    }
 
-   public double calculateDiscount(double amount, boolean isPhone) {
-      double discount = 0.0;
-
-      if (!isPhone) {
-         if (cardType.equalsIgnoreCase("gold")) {
-            discount = amount * 0.3;
-         } else if (cardType.equalsIgnoreCase("silver")) {
-            discount = amount * 0.2;
-         } else if (isAffiliate) {
-            discount = amount * 0.1;
-         } else if (isOver2YearsCustomer) {
-            discount = amount * 0.05;
-         }
-      }
-
-      double billDiscount = Math.floor(amount / 200) * 5;
-      discount += billDiscount;
-
-      return discount;
+   public String getName() {
+      return name;
    }
 
-   public double calculateNetPayableAmount(double amount, boolean isPhone) {
-      double discount = calculateDiscount(amount, isPhone);
-      return amount - discount;
+   public void setName(String name) {
+      this.name = name;
+   }
+
+   public String getCardType() {
+      return cardType;
+   }
+
+   public void setCardType(String cardType) {
+      this.cardType = cardType;
+   }
+
+   public boolean isAffiliate() {
+      return isAffiliate;
+   }
+
+   public void setAffiliate(boolean affiliate) {
+      isAffiliate = affiliate;
+   }
+
+   public boolean isOver2YearsCustomer() {
+      return isOver2YearsCustomer;
+   }
+
+   public void setOver2YearsCustomer(boolean over2YearsCustomer) {
+      isOver2YearsCustomer = over2YearsCustomer;
    }
 }
 
