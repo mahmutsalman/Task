@@ -21,3 +21,6 @@ Before running the application and tests, make sure you have the following softw
 4. Run this command: javac App.java Card.java Calculator.java Person.java
 5. To run the application run this command:  java org.example.App
 Then the application will start and wait for user input
+
+
+For the coverage result please refer to : https://www.jetbrains.com/help/idea/code-coverage.html
