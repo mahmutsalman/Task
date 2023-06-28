@@ -23,4 +23,16 @@ Before running the application and tests, make sure you have the following softw
 Then the application will start and wait for user input
 
 
-For the coverage result please refer to : https://www.jetbrains.com/help/idea/code-coverage.html
+## Maven scripts
+
+1. **mvn package**
+
+2. **java -cp target/Task3-1.0-SNAPSHOT.jar org.example.App** 
+
+3. **mvn checkstyle:checkstyle** 
+
+4. **mvn clean test jacoco:report**
+
+
+
+
