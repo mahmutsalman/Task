@@ -1,32 +1,23 @@
 package org.example;
 
 public class Calculator {
-    Person person;
-    double bill;
-    public static double calculateDiscount(Person person,double amount, boolean isPhone) {
+
+    public static double calculateDiscount(Person person, int amount, boolean isPhone) {
         double discount = 0.0;
 
         if (!isPhone) {
-            if (person.getCardType().equalsIgnoreCase("gold")) {
-                discount = amount * 0.3;
-            } else if (person.getCardType().equalsIgnoreCase("silver")) {
-                discount = amount * 0.2;
-            } else if (person.isAffiliate()) {
-                discount = amount * 0.1;
-            } else if (person.isOver2YearsCustomer()) {
-                discount = amount * 0.05;
-            }
+            discount = amount * person.getCard().getDisCountPercentage();
         }
 
-        double billDiscount = Math.floor(amount / 200) * 5;
+        int billDiscount = (amount / 200) * 5;
         discount += billDiscount;
 
         return discount;
     }
 
     //Method for calculating net payable amount
-    public static double calculateNetPayableAmount(Person person,double amount, boolean isPhone) {
-        double discount = calculateDiscount(person,amount, isPhone);
+    public static double calculateNetPayableAmount(Person person, int amount, boolean isPhone) {
+        double discount = calculateDiscount(person, amount, isPhone);
         return amount - discount;
     }
 }
