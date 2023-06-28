@@ -8,7 +8,7 @@ of the customer like having a gold or silver card or if he/she is a affiliate cu
 Before running the application and tests, make sure you have the following software installed:
 
 - Java Development Kit (JDK) [11 +]
--
+- Maven [3+]
 
 ## Installation
 
@@ -33,6 +33,11 @@ Then the application will start and wait for user input
 
 4. **mvn clean test jacoco:report**
 
+## Unit test and coverage
+For unit test org/example/CalculatorTest.java class can be run (In IntelliJ Run with Coverage option)
 
+## UML Diagram 
+
+![UML diagram](https://github.com/mahmutsalman/Task/assets/74365527/074075ca-620f-4607-b4f5-a165f3f70a1e)
 
 
