@@ -25,16 +25,16 @@ Then the application will start and wait for user input
 
 # Maven scripts
 
-# Package the project
+## Package the project
 mvn package
 
-# Run the code in the command line
+## Run the code in the command line
 java -cp target/Task3-1.0-SNAPSHOT.jar org.example.App
 
-# Run Checkstyle
+## Run Checkstyle
 mvn checkstyle:checkstyle
 
-# Run the tests and generate a JaCoCo report
+## Run the tests and generate a JaCoCo report
 mvn clean test jacoco:report
 
 
