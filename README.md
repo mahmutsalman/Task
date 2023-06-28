@@ -23,7 +23,7 @@ Before running the application and tests, make sure you have the following softw
 Then the application will start and wait for user input
 
 
-# Maven scripts
+## Maven scripts
 
 1. **mvn package**
 
