@@ -15,7 +15,7 @@ Before running the application and tests, make sure you have the following softw
 1. Clone or download the repository to your local machine:
 
    ```shell
-   git clone [[repository URL]](https://github.com/mahmutsalman/Task)https://github.com/mahmutsalman/Task
+   git clone https://github.com/mahmutsalman/Task
 2. Navigate to ..\Task\src\main\java and make sure you find **org** folder
 3. Open the command line
 4. Run this command: **javac App.java Card.java Calculator.java Person.java**
