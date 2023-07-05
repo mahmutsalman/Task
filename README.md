@@ -16,10 +16,10 @@ Before running the application and tests, make sure you have the following softw
 
    ```shell
    git clone https://github.com/mahmutsalman/Task
-2. Navigate to ..\Task\src\main\java and make sure you find **org** folder
+2. Navigate to ..\Task\src\main\java\org\example
 3. Open the command line
 4. Run this command: **javac App.java Card.java Calculator.java Person.java**
-5. To run the application run this command:  **java org.example.App**
+5. To run the application first navigate to ..\Task\src\main\java\ run this command:  **java org.example.App**
 Then the application will start and wait for user input
 
 
