@@ -6,11 +6,26 @@ public class Person {
     private boolean isAffiliate;
     private boolean isOver2YearsCustomer;
 
+    
+    public Person(){
+        
+    }
     public Person(String name, Card card, boolean isAffiliate, boolean isOver2YearsCustomer) {
         this.name = name;
         this.card = card;
         this.isAffiliate = isAffiliate;
         this.isOver2YearsCustomer = isOver2YearsCustomer;
+    }
+
+    public void setCard(Card card)
+    {
+        this.card = card;
+    }
+    public void setIsAffiliate(boolean bol){
+        this.isAffiliate=bol;
+    }
+    public void setIsOver2YearsCustomer(boolean bol){
+        this.isOver2YearsCustomer = bol;
     }
 
     public String getName() {
